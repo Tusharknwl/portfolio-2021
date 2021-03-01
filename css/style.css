@@ -3,6 +3,10 @@
   list-style: none;
 }
 
+.primary {
+  color: #3DCFD3;
+}
+
 
 /* navbar section */
 
@@ -15,7 +19,7 @@
 /* social-links */
 
 #social-media a {
-  display: block;
+  /* display: block; */
   font-size: 1.5rem;
   color: rgb(15, 73, 75)
 }
@@ -142,15 +146,11 @@ h2 .glowtext {
 /* about me section */
 #aboutMe {
   margin: 0;
-  padding: 7% 10%;
+  padding: 10% 10% 15%;
 }
 
 #aboutMe .about-heading {
   font-size: 2.5rem;
-}
-
-#aboutMe .me-color {
-  color: #3DCFD3;
 }
 
 
@@ -181,6 +181,7 @@ h2 .glowtext {
   padding: 5px 15px;
   background: transparent;
   color: rgb(35, 123, 126);
+  text-decoration: none;
 } 
 
 
@@ -192,13 +193,9 @@ h2 .glowtext {
   color: #fff;
   letter-spacing: 2px;
   padding: 10% 20%;
-  margin: 60px auto;
+  margin: 0 auto;
 }
 
-
-#skills .skill {
-  color: #3DCFD3;
-}
 
 #skills li {
   margin: 35px auto;
@@ -290,3 +287,281 @@ h2 .glowtext {
     width: 50%;
   }
 }
+
+/* education and experince */
+
+#education {
+  padding: 7% 17%;
+}
+
+#education h1.edu {
+  font-size: 2.5rem;
+  padding-bottom: 7%;
+  text-align: center;
+}
+#education ul {
+  padding: 0;
+}
+
+#education li h1 {
+  font-size: 1.5rem;
+}
+#education ul li {
+  /* padding-bottom: 1rem;
+  padding-top: 2rem; */
+  line-height: 1.5;
+  /* padding-left: 3rem;  */
+  margin-bottom: 3rem;
+  width: 45%;
+  display: block;
+  background: #111;
+  color: #fff;
+}
+
+#education li.left {
+  margin-right: auto;
+  /* margin-left: auto; */
+  padding: 0 2% 2rem 3%;
+  text-align: right;
+  border-radius: 10px 0 10px 10px; 
+}
+
+#education li.right {
+  margin-left: auto;
+  padding: 0 3% 2rem 2%;
+  text-align: left;
+  border-radius: 0 10px 10px;
+}
+.timeline-content .date {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.timeline-content .date {
+    position: relative;
+    top: -30px;
+    z-index: 1;
+  }
+
+/*
+#educaion .timeline::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 52.5%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+  }
+
+.timeline ul li::before {
+    content: "";
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: rgb(45, 184, 184);
+  }
+
+
+/* #education {
+  min-height: 100vh;
+  width: 100%; yh comment kyu kia h
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #fff;
+}
+*/
+/* #education h1 {
+  text-align: center;
+  display: block;
+} 
+
+
+#education .timeline-content .h-right {
+  text-align: left;
+  display: block; /*dekh heading 1 and 3 ko left align krrna h or 2 and 4 ko right 
+  kya kr rha h
+}
+
+#education  .h-left {
+  
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline ul li {
+  padding: 20px;
+  background-color: #1e1f22;
+  color: white;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.right {
+  margin-left: 53%;
+  border-radius: 0 10px 10px;
+}
+
+.left {
+  margin-right: 53%;
+  border-radius: 10px 0 10px 10px;
+}
+/*
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}*/
+
+/*
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+*/
+
+  /*
+  
+/* element.style {
+    margin-right: -10;
+    margin-right: -20px;
+    margin-bottom: 20px;
+} */
+
+
+/*
+.timeline-content .date {
+    position: relative;
+    top: -45px;
+    z-index: 1000;
+}
+.timeline-content .date-left {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #000;
+    margin-right: -20px;
+    float: right;
+}
+.timeline-content .date-right {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #000;
+    margin-left: -20px;
+    float: left;
+}
+/*
+
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 52.5%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: rgb(45, 184, 184);
+  }
+} */
+
+/* contact section */
+
+#form_container
+{
+	padding:7% 15%;
+	margin: 0;;
+	background: rgb(0, 0, 0);	
+	color:#fff;
+}
+.upload-btn-wrapper 
+{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file] 
+{
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+

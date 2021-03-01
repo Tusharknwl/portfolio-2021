@@ -1,5 +1,22 @@
 @media (max-width: 992px) {
 
+
+#title a.navbar-brand, #title .navbar-toggler {
+  font-size: 3.3rem;
+}
+#title ul li.nav-item {
+  font-size: 2.5rem;
+  text-align: center;
+  border-bottom: 1px rgba(255, 255, 255, 0.425) solid;
+}
+
+#aboutMe p, p {
+  font-size: 1.6rem;
+}
+#title .bttn, #aboutMe .bttn {
+  margin-top: 7%;
+  font-size: 1.5rem;
+}
   /* #title .row {
     padding-bottom: 7%;
   } */
@@ -33,5 +50,15 @@
 #social-media a:hover {
   color: rgb(92, 129, 121);
   font-size: 2.3rem;
+}
+
+#education ul li {
+  width: 100%;
+  /* font-size: 2rem; */
+  margin-bottom: 10%;
+}
+#education li.left, li.right {
+  float: none;
+  text-align: left;
 }
 }
