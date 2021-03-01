@@ -218,6 +218,11 @@ h2 .glowtext {
   background: #3DCFD3;
 }
 
+.cpp {
+  width: 85%;
+  animation: cpp 3s ;
+}
+
 .html {
   width: 90%;
   animation: html 3s ;
@@ -241,6 +246,15 @@ h2 .glowtext {
 .react {
   width: 50%;
   animation: react 3s;
+}
+
+@keyframes cpp {
+  0% {
+    width: 0;
+  }
+  100%{
+    width: 85%;
+  }
 }
 
 @keyframes html {
