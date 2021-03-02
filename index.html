@@ -49,7 +49,9 @@
        <div class="intro">
       <h2>Hello!</h2>
       <h1><span class="name">I'</span>m <span class="name">Tushar</span></h1>
-      <h2>And I'm A <span class="glowtext">web developer.</span></h2>
+      <h2>And I'm A 
+      <a href="" class="typewrite primary" data-period="2000" data-type='[ "web developer", "C++ programmer", "Engineering sudent"]'>
+      <span class="wrap"></span></a></h2>
       </div>
        <a class="bttn contact-btn " href="mailto:tusharofficial23@gmail.com">CONTACT ME</a>
      </div>
@@ -209,8 +211,74 @@
         <li class="line"><span class=""></span></li>
       </ul>  
     </section> 
-
+    <script src="form.js"></script>
     <script src="script.js"></script>
+
+
+    <script>
+$(function()
+{
+    function after_form_submitted(data)
+    {
+        if(data.result == 'success')
+        {
+            $('form#reused_form').hide();
+            $('#success_message').show();
+            $('#error_message').hide();
+        }
+        else
+        {
+            $('#error_message').append('<ul></ul>');
+
+            jQuery.each(data.errors,function(key,val)
+            {
+                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+            });
+            $('#success_message').hide();
+            $('#error_message').show();
+
+            //reverse the response on the button
+            $('button[type="button"]', $form).each(function()
+            {
+                $btn = $(this);
+                label = $btn.prop('orig_label');
+                if(label)
+                {
+                    $btn.prop('type','submit' );
+                    $btn.text(label);
+                    $btn.prop('orig_label','');
+                }
+            });
+
+        }//else
+    }
+
+	$('#reused_form').submit(function(e)
+      {
+        e.preventDefault();
+
+        $form = $(this);
+        //show some response on the button
+        $('button[type="submit"]', $form).each(function()
+        {
+            $btn = $(this);
+            $btn.prop('type','button' );
+            $btn.prop('orig_label',$btn.text());
+            $btn.text('Sending ...');
+        });
+
+
+                    $.ajax({
+                type: "POST",
+                url: 'handler.php',
+                data: $form.serialize(),
+                success: after_form_submitted,
+                dataType: 'json'
+            });
+
+      });
+});
+</script>
 
     <!-- bootstrap javascript and  -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

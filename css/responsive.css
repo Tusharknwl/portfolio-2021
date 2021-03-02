@@ -1,6 +1,13 @@
 @media (max-width: 992px) {
 
 
+.greeting h2 {
+  font-size: 3rem;
+}
+
+#title .greeting h1 {
+  font-size: 5.7rem;
+}
 #title a.navbar-brand, #title .navbar-toggler {
   font-size: 3.3rem;
 }
@@ -35,6 +42,7 @@
 
 #aboutMe .profile-pic {
   width: 50%;
+  border-radius: 100%;
   float: none;
   text-align: center;
   margin: 5%;
