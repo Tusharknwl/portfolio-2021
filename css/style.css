@@ -99,9 +99,6 @@ h1:hover .name {
   width: 75%;
 }
 
-/* .row .glowtext {
-  color: #3DCFD3;
-} */
 
 .greeting h2 a.typewrite {
   margin:0px;
@@ -164,7 +161,7 @@ h1:hover .name {
 
 
 #aboutMe img {
-  width: 60%;
+  width: 62%;
   float: right;
   margin-right: 70px;
   box-shadow: 2px 2px 10px #000
