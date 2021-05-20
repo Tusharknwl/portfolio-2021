@@ -1,3 +1,14 @@
+@media only screen and (max-width: 1484px) and (min-width: 1214px) {
+	#projects .work{
+        padding:20px 15% 5%;
+    }
+}
+@media only screen and (max-width: 1214px) and (min-width: 1000px) {
+	#projects .work{
+        padding:20px 12%;
+    }
+}
+
 @media (max-width: 992px) {
 
 
@@ -68,5 +79,40 @@
 #education li.left, li.right {
   float: none;
   text-align: left;
+}
+
+#projects .work{
+        padding:20px 10%;
+    }
+    #projects .card{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	width: 350px;
+	height:400px;
+	border-radius:12px;
+  background: black;
+}
+#projects .card .work-content{
+	text-align: center;
+	padding: 10px 10px;
+	font-size: 2rem;
+}
+
+.social-media{
+	padding: 40px;
+	display: flex;
+	position: center;
+  align-items: space-around; 
+	justify-content:center;
+
+}
+
+.social-media a {
+    margin: 15px;
+    font-size: 3.5rem;
+    text-align:center;
+    display: inline-block;
+	color: var(--main-fonts-color);
 }
 }

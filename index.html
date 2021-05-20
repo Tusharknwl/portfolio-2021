@@ -10,11 +10,7 @@
 	 crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&family=Modak&display=swap" rel="stylesheet">
-	<!-- fontawesome -->
-	<script src="https://kit.fontawesome.com/7f019d47b7.js" crossorigin="anonymous">
-	</script>
-
-   <script src="form.js"></script>
+	
 </head>
 
 <body>
@@ -56,17 +52,28 @@
       <h2>Hello!</h2>
       <h1><span class="name">I'</span>m <span class="name">Tushar</span></h1>
       <h2>And I'm A 
-      <a href="" class="typewrite primary" data-period="2000" data-type='[ "web developer", "C++ programmer", "Engineering student"]'>
+      <a href="" class="typewrite primary" data-period="2000" data-type='["web developer", "C++ programmer", "Engineering student"]'>
       <span class="wrap"></span></a></h2>
+       <div class="social-media">
+			  <a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
+			  <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
+			  <a href="#" target="_blank"><i class='fab fa-github'></i></a>
+			  <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+			  <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+		    </div>
       </div>
-       <a class="bttn contact-btn " href="mailto:tusharofficial23@gmail.com">CONTACT ME</a>
+       <!-- <a class="bttn contact-btn " href="mailto:tusharofficial23@gmail.com">CONTACT ME</a> -->
+        
      </div>
      <div class="col-lg-6">
      <img src="images/propic.jpeg" alt="">
      </div>
   </div>
+
   </section>
 
+  
+			 
 
   <!-- about me -->
   <section id="aboutMe">
@@ -151,10 +158,51 @@
   </div>
   </section>
 
-  <!-- project section -->
-  <section id="project">
-
-  </section>
+   <!--───────────────Projects───────────────-->
+	  <div id="projects"> 
+		 <h3>My Projects.<hr></h3>
+		  <p>Here are some of my projects.</p>
+		  <div class="work-box">
+		  <div class="work">
+		<!--───────────────card───────────────-->
+    <div class="card">
+			    <img class="work-img" src="images/covid19.png">
+			    <a href="https://covid-19-tracker.tusharknwl.repl.co/" target="_blank"> <!--Link to project-->
+				<div class="work-content">COVID-19 tracker</div></a>
+      </div> 
+			<div class="card">
+			    <img class="work-img" src="images/todoList.PNG">
+			    <a href="" target="_blank"> <!--Link to project-->
+				<div class="work-content">To Do List.</div></a>
+      </div>
+			<div class="card">
+			    <img class="work-img" src="images/tinDog.png">
+				<a href="https://tindog.tusharknwl.repl.co/" target="_blank"> <!--Link to project-->
+				<div class="work-content">Tin Dog.</div></a>
+            </div>
+            <div class="card">
+			    <img class="work-img" src="images/dice.png">
+				<a href="https://dice-game.tusharknwl.repl.co/" target="_blank"> <!--Link to project-->
+				<div class="work-content">Dice Game.</div></a>
+            </div>
+            <div class="card">
+			    <img class="work-img" src="images/drumKit.png">
+				<a href="https://drum-kit.tusharknwl.repl.co/" target="_blank"> <!--Link to project-->
+				<div class="work-content">Drum Kit.</div></a>
+            </div> 
+			<!--<div class="card">
+			     <img class="work-img" src="https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=781&q=80">
+				<a href="" target="_blank"> 
+				<div class="work-content">Simon Game.</div></a>
+            </div> -->
+			<div class="card">
+			    <img class="work-img" src="images/clock.PNG">
+				<a href="https://clock.tusharknwl.repl.co/" target="_blank"> <!--Link to project-->
+				<div class="work-content">clock.</div></a>
+            </div> 	  
+		  </div>
+		  </div>
+	  </div>
 
 <!-- contact section -->
   <section id="contactme"></section>
@@ -217,6 +265,8 @@
         <li class="line"><span class=""></span></li>
       </ul>  
     </section> 
+
+
     <script src="form.js"></script>
     <script src="script.js"></script>
 
@@ -288,5 +338,15 @@ $(function()
 
     <!-- bootstrap javascript and  -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/7f019d47b7.js" crossorigin="anonymous">
+	</script>
+
+   <script src="form.js"></script>
+
+   <footer>
+    <span>&copy TUSHAR. 2021</span>
+  </footer>
   </body>
 </html>
