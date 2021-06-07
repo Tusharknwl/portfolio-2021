@@ -10,7 +10,10 @@
 	 crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&family=Modak&display=swap" rel="stylesheet">
-	
+	<!-- Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+	</script>
+
 </head>
 
 <body>
@@ -19,15 +22,15 @@
 
 
 			<!-- Nav Bar -->
-			<nav class="navbar navbar-expand-lg navbar-dark">
-				<a href="" class="navbar-brand">tK</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+				<a href="" class="navbar-brand">./tK></a>
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a href="#" class="nav-link">Home</a>
+            <li class="nav-item active primary">
+              <a href="#" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
               <a href="#aboutMe" class="nav-link">About me</a>
@@ -37,6 +40,9 @@
            </li>
            <li class="nav-item">
               <a href="#education" class="nav-link">Edu-&-Exp.</a>
+           </li>
+           <li class="nav-item">
+              <a href="#projects" class="nav-link">Project</a>
            </li>
             <li class="nav-item">
               <a href="#contactme" class="nav-link">Contact</a>
@@ -62,66 +68,63 @@
 			  <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
 		    </div>
       </div>
-       <!-- <a class="bttn contact-btn " href="mailto:tusharofficial23@gmail.com">CONTACT ME</a> -->
-        
      </div>
      <div class="col-lg-6">
-     <img src="images/propic.jpeg" alt="">
+      <img class="bg" src="images/propic.jpeg" alt="">
+      <img class="mobile-bg" src="images/bg-mobile.jpeg">
      </div>
-  </div>
-
+    </div>
   </section>
-
-  
-			 
-
   <!-- about me -->
   <section id="aboutMe">
+    <h2 class="about-heading">About <span class="primary">ME</span><hr></h2>
     <div class="row">
       <div class="profile col-lg-5">
         <img class="profile-pic" src="images/profile.jpeg" alt="">
       </div>
       <div class="about col-lg-7">
-        <h2 class="about-heading">ABOUT <span class="primary">ME</span></h2>
-        <h5>Front end Developer/C++ programmer</h5>
-        <p>Hello, My name is Tushar. I'm currently a 2nd year student in DTU.
-           I'm a Front-end Web Developer having good knowledge of HTML/CSS and React JS.
-           I have good knowledge of C++ as well and I have been doing competitive programming since last 4 months on CodeChef(3star) and Hackerrank.</p>
-          <a class="bttn resume-btn " href="https://drive.google.com/file/d/1X0FJnfKSsC6qLmNlBBNqKL1biXa4PSBI/view?usp=drivesdk" onclick="" target="blank">RESUME</a>
+        <h3 class="primary">Front end Developer/C++ programmer</h3>
+        <p>Hello, My name is Tushar. I'm currently a 2nd year student in DTU. I'm a Front-end Web Developer having good knowledge of HTML, CSS, Javascript and React JS. I have good knowledge of C++ as well and I have been doing competitive programming since last 4 months on CodeChef(3star) and Hackerrank.</br>You can download my resume on the given below button ; ).</p>
+         <a class="bttn" href="https://drive.google.com/file/d/1X0FJnfKSsC6qLmNlBBNqKL1biXa4PSBI/view?usp=drivesdk" onclick="" target="blank">Download Resume</a>
       </div>
     </div>
   </section>
-
-
   <!-- skill section -->
   <section id="skills">
-    <div class="my-skills">
-      <h1>My <span class="primary">Skills</span></h1>
+    <h1>My <span class="primary">Skills</span><hr></h1>
+    <div class="row">
+      
+      <div class="skill-logo col-lg-6">
+        <img src="images/myskills.png">
+      </div>
+    <div class="my-skills col-lg-6">
+      
       <li>
-        <h3>C++</h3><span class="bar"><span class="cpp"></span></span>
+        <h3>C++</h3><h4>85%</h4><span class="bar"><span class="progresscpp"></span></span>
       </li>
       <li>
-        <h3>HTML</h3><span class="bar"><span class="html"></span></span>
+        <h3>HTML</h3><h4>90%</h4><span class="bar"><span class="progresshtml"></span></span>
       </li>
       <li>
-        <h3>CSS</h3><span class="bar"><span class="css"></span></span>
+        <h3>CSS</h3><h4>80%</h4><span class="bar"><span class="progresscss"></span></span>
       </li>
       <li>
-        <h3>JAVASCRIPT</h3><span class="bar"><span class="javascript"></span></span>
+        <h3>JAVASCRIPT</h3><h4>55%</h4><span class="bar"><span class="progressjavascript"></span></span>
       </li>
       <li>
-        <h3>BOOTSTRAP</h3><span class="bar"><span class="bootstrap"></span></span>
+        <h3>BOOTSTRAP</h3><h4>65%</h4><span class="bar"><span class="progressbootstrap"></span></span>
       </li>
       <li>
-        <h3>REACT.JS</h3><span class="bar"><span class="react"></span></span>
+        <h3>REACT.JS</h3><h4>50%</h4><span class="bar"><span class="progressreact"></span></span>
       </li>
+    </div>
     </div>
   </section>
 
   <!-- Educaton and experience section -->
   <section id="education">
   <div class="timeline">
-    <h1 class="edu">Education <span class="primary">&</span> Experience</h1>
+    <h1 class="heading">Education <span class="primary">&</span> Experience</h1>
     <ul>
       <li class="right">
         <div class="timeline-content">
@@ -160,7 +163,7 @@
 
    <!--───────────────Projects───────────────-->
 	  <div id="projects"> 
-		 <h3>My Projects.<hr></h3>
+		 <h1 class="heading"><span class="primary">My</span> Projects.<hr></h1>
 		  <p>Here are some of my projects.</p>
 		  <div class="work-box">
 		  <div class="work">
@@ -187,14 +190,9 @@
             </div>
             <div class="card">
 			    <img class="work-img" src="images/drumKit.png">
-				<a href="https://drum-kit.tusharknwl.repl.co/" target="_blank"> <!--Link to project-->
+				 <a href="https://drum-kit.tusharknwl.repl.co/" target="_blank"> <!--Link to project-->
 				<div class="work-content">Drum Kit.</div></a>
-            </div> 
-			<!--<div class="card">
-			     <img class="work-img" src="https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=781&q=80">
-				<a href="" target="_blank"> 
-				<div class="work-content">Simon Game.</div></a>
-            </div> -->
+      </div> 
 			<div class="card">
 			    <img class="work-img" src="images/clock.PNG">
 				<a href="https://clock.tusharknwl.repl.co/" target="_blank"> <!--Link to project-->
@@ -207,37 +205,34 @@
 <!-- contact section -->
   <section id="contactme"></section>
     <div id="form_container">
-        <h1>Contact <span class="primary">ME</span></h1>
-        <p>
+        <h1 class="heading">Contact <span class="primary">ME</span></h1>
+        <h4>
            Please send your message below.
-        </p>
+        </h4>
         <form role="form" method="post" id="reused_form">
 
             <div class="row">
                 <div class="col-sm-12 form-group">
                     <label for="message">
                         Message:</label>
-                    <textarea class="form-control" type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>
+                    <textarea class="form-control mssg" type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-6 form-group">
                     <label for="name">
                         Your Name:</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
+                    <input type="text" class="form-control info" id="name" name="name" required>
                 </div>
                 <div class="col-sm-6 form-group">
                     <label for="email">
                         Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                    <input type="email" class="form-control info" id="email" name="email" required>
                 </div>
             </div>
-
-
-
             <div class="row">
                 <div class="col-sm-12 form-group">
-                    <button type="submit" class="btn btn-lg btn-default btn-dark pull-right" >Send →</button>
+                    <button type="submit" class="btn btn-lg btn-default pull-right" >Send →</button>
                 </div>
             </div>
 
@@ -245,14 +240,12 @@
         <div id="success_message" style="width:100%; height:100%; display:none; ">
             <h3>Posted your message successfully!</h3>
         </div>
-        <div id="error_message"
-                style="width:100%; height:100%; display:none; ">
-                    <h3>Error</h3>
-                    Sorry there was an error sending your form.
-
+        <div id="error_message" style="width:100%; height:100%; display:none; ">
+            <h3>Error</h3>Sorry there was an error sending your form.
         </div>
     </div>
 </div>
+<!-- <img src="https://github.githubassets.com/images/modules/site/home/footer-illustration.svg" alt="Illustration of the evolution of development by octocats" width="2900" height="1494" class="home-footer-illustration height-auto position-relative z-1 width-full d-block events-none" loading="lazy" decoding="async"> -->
 
   
     <!-- social-links -->
@@ -264,89 +257,74 @@
         <li><a class="insta" href=""><i class="fab fa-instagram"></i></a></li>
         <li class="line"><span class=""></span></li>
       </ul>  
-    </section> 
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button> 
+<!-- footer -->
+  <footer class="footer-distributed">
+ 
+		<div class="footer-left">
+ 
+		<h3>Tushar<span class="primary"> Khanagwal</span></h3>
+ 
+		<p class="footer-links">
+		<a href="index.html">Home</a>
+	·
+		<a href="#">Blog</a>
+	·
+		<a href="#">About</a>
+	·
+		<a href="#">Faq</a>
+	·
+		<a href="#">Contact</a>
+		</p>
+ 
+		<p class="footer-company-name">TUSHAR &copy; 2021</p>
+		</div>
+ 
+		<div class="footer-center">
+ 
+		<div>
+		<i class="fa fa-map-marker"></i>
+		<p>Delhi, India</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-phone"></i>
+		<p>8076684547</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-envelope"></i>
+		<p><a href="tusharofficial23@gmail.com">tushar@gmail.com</a></p>
+		</div>
+ 
+		</div>
+ 
+		<div class="footer-right">
+ 
+		<p class="footer-company-about">
+		<span>Get in touch</span>
+		</p>
+ 
+		<div class="footer-icons">
+ 
+		<a href="#"><i class="fa fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-linkedin"></i></a>
+		<a href="#"><i class="fa fa-github"></i></a>
+		</div>
+	</div>
+</footer>
 
 
-    <script src="form.js"></script>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
-
-    <script>
-$(function()
-{
-    function after_form_submitted(data)
-    {
-        if(data.result == 'success')
-        {
-            $('form#reused_form').hide();
-            $('#success_message').show();
-            $('#error_message').hide();
-        }
-        else
-        {
-            $('#error_message').append('<ul></ul>');
-
-            jQuery.each(data.errors,function(key,val)
-            {
-                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
-            });
-            $('#success_message').hide();
-            $('#error_message').show();
-
-            //reverse the response on the button
-            $('button[type="button"]', $form).each(function()
-            {
-                $btn = $(this);
-                label = $btn.prop('orig_label');
-                if(label)
-                {
-                    $btn.prop('type','submit' );
-                    $btn.text(label);
-                    $btn.prop('orig_label','');
-                }
-            });
-
-        }//else
-    }
-
-	$('#reused_form').submit(function(e)
-      {
-        e.preventDefault();
-
-        $form = $(this);
-        //show some response on the button
-        $('button[type="submit"]', $form).each(function()
-        {
-            $btn = $(this);
-            $btn.prop('type','button' );
-            $btn.prop('orig_label',$btn.text());
-            $btn.text('Sending ...');
-        });
-
-
-                    $.ajax({
-                type: "POST",
-                url: 'handler.php',
-                data: $form.serialize(),
-                success: after_form_submitted,
-                dataType: 'json'
-            });
-
-      });
-});
-</script>
-
-    <!-- bootstrap javascript and  -->
+<!-- bootstrap javascript and  -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 <!-- fontawesome -->
 	<script src="https://kit.fontawesome.com/7f019d47b7.js" crossorigin="anonymous">
 	</script>
 
-   <script src="form.js"></script>
-
-   <footer>
-    <span>&copy TUSHAR. 2021</span>
-  </footer>
-  </body>
+</body>
 </html>
