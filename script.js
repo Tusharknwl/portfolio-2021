@@ -25,7 +25,6 @@ $(window).scroll(function() {
   }
 
   if($(window).scrollTop()>2000&& $(window).scrollTop()<7000) {
-    console.log("x++");
     $("li.left").addClass("leftbefore");
     $("li.right").addClass("rightbefore");
   } else {
