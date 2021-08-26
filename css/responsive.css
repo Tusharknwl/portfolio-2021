@@ -27,7 +27,7 @@
     display: block;
     text-align: center;
   }
-  .social-media i {
+  .social-media a,.social-media i {
     font-size: 5rem;
   }
   #title .row img.bg {
@@ -171,12 +171,14 @@
 }
 #form_container .mssg {
   height: 15rem;
+  font-size: 2.5rem;
   }
   #form_container .info {
   height: 8rem;
+  font-size: 2.5rem;
   }
   #form_container .btn {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .footer-distributed {
   padding: 10% 15%;
